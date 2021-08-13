@@ -1,0 +1,29 @@
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+$Dark-Gray: hsl(0, 0%, 55%);
+.hovercard {
+  position: relative;
+  color: $White;
+
+  transition: color 0.3s ease-in, filter 0.3s ease-in, opacity 0.3s ease-in;
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 2rem;
+    font-size: 1.953rem;
+    z-index: 2;
+  }
+
+  &:hover {
+    color: $Very-Dark-Gray;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &:hover img {
+    opacity: 0.3;
+    //filter: grayscale(0.3);
+  }
+}
